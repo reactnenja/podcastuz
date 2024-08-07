@@ -1,0 +1,25 @@
+.hero {
+    background-image: url("../../../../assets/hero-shapes.svg"),
+        url("../../../../assets/hero-shapes-right.svg");
+    background-size: 629px 539px, 255px 216px;
+    background-position: -215px 15%, right 245px;
+    background-repeat: no-repeat;
+
+    // For tablets (768px to 1024px)
+    @media (max-width: 1024px) {
+        background-size: 500px 429px, 130px 180px;
+        background-position: -100px 40%, right 200px;
+    }
+
+    // For mobile devices (up to 768px)
+    @media (max-width: 768px) {
+        background-size: 350px 300px, 100px 150px;
+        background-position: -60px 35%, right 150px;
+    }
+
+    // For small mobile devices (up to 480px)
+    @media (max-width: 480px) {
+        background-size: 250px 200px, 80px 120px;
+        background-position: -40px 30%, right 100px;
+    }
+}
