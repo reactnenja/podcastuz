@@ -16,7 +16,7 @@ const ListenGroup = () => {
                             Talk. Listen. Get inspired <br /> by every minute of
                             it.
                         </h3>
-                        <div className="flex gap-6 justify-between items-center ">
+                        <div className="flex gap-6 justify-between items-center sm:flex-row ">
                             <div className="w-[672px] h-auto duration-500 transition-all hover:scale-110  hover:shadow-md text-center flex flex-col p-4 rounded-md hover:border justify-center items-center  gap-4 bg-white ">
                                 <img
                                     src={IconsImagesOne}

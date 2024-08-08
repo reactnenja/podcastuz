@@ -103,7 +103,7 @@ const FeedbackSlider = () => {
                     slidesPerView="auto"
                     modules={[Navigation]}
                     onSwiper={setSwiper}
-                    className="w-[100%] pl-[850px]"
+                    className="w-[100%] lg:pl-[250px] sm:pl-6"
                 >
                     {feedbackData.map((feedback, index) => (
                         <SwiperSlide
@@ -111,8 +111,8 @@ const FeedbackSlider = () => {
                             className="!w-[760px] cursor-pointer"
                         >
                             <div className="bg-white p-8 w-[700px] border h-[450px]  rounded-lg shadow-md">
-                                <div className="flex justify-center ">
-                                    <div className="flex justify-center w-[200px] mb-10 px-4 py-16 rounded-md hover:bg-white transition-all duration-500 hover:shadow-md">
+                                <div className="flex justify-start ">
+                                    <div className="flex justify-center w-[200px] mb-8 px-4 py-16 rounded-md hover:bg-white transition-all duration-500 hover:shadow-md">
                                         <img
                                             src={ImagesQuote}
                                             alt="Quote"
@@ -120,13 +120,14 @@ const FeedbackSlider = () => {
                                         />
                                     </div>
                                 </div>
-                                <blockquote className="text-lg mb-6 font-medium">
+                                <blockquote className="text-lg mb-4 font-medium">
                                     "{feedback.text}"
                                 </blockquote>
                                 <div className="flex items-center gap-4">
                                     <img
                                         src={feedback.slideAvatar}
                                         alt={feedback.name}
+                                        ty
                                         className="w-[80px] h-[80px] rounded-full mr-4"
                                     />
                                     <div>
@@ -147,7 +148,7 @@ const FeedbackSlider = () => {
                     ))}
                 </Swiper>
 
-                <div className="absolute right-4 bottom-20 top-[480px] transform -translate-y-1/2 flex gap-4">
+                <div className="absolute left-[250px] sm:left-8 top-[520px] transform -translate-y-1/2 flex gap-4">
                     <button
                         onClick={() => swiper?.slidePrev()}
                         className="bg-[#F7EDE8] text-black border-2 shadow-md  border-[#F7EDE8] hover:border-black  rounded-full p-3  h-20 w-20  flex justify-center items-center  hover:bg-transparent"
